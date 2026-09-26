@@ -70,9 +70,18 @@ img {
 }
 
 body {
+  margin: 0;
   background: linear-gradient(to bottom, #1a1a1a, #000000);
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: centre;
+  align-items: centre;
+  height: 100vh;
+}
+  
 button i {
   margin-right: 10px;
 }
