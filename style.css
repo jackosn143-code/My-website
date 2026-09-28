@@ -77,12 +77,6 @@ img:active {
 h2 {
   font-size: 24px;
 }
-h3 {
-  font-size: 20px;
-}
-p {
-  font-size: 16px;
-}
 
 body {
   font-family: 'Poppins', Arial, sans-serif;
@@ -119,4 +113,21 @@ body {
   text-align: center;
   padding: 0 20px;
   color: #ccc;
+}
+
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hero {
+  background: black;
+}
+
+.about {
+  background: #000;
+}
+
+.link {
+  background: #111;
 }
