@@ -2,21 +2,36 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
 
-  width: 200px;
-  margin: 10px auto;
-  padding: 12px;
-  border-radius: 10px;
-  background: linear-gradient(to right, red, orange);
+  width: 220px;
+  margin: 12px auto;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(270deg, #ff416c, #ff4b2b, #ff9a00);
+  background-size: 600% 600%;
+  animation: gradientMove 5s ease infinite;
   color: white;
   text-decoration: none;
   transition: 0.3s;
+
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 15px rgba(255, 0, 0, 0.4);
 }
 
 .btn:hover {
-  background: linear-gradient(to right, blue, purple);
+  background: linear-gradient(135deg, #667eea, #764ba2);
   transform: scale(1.08);
+  box-shadow: 0 6px 20px rgba(0, 0, 255, 0.5);
+}
+
+@keyframes gradientMove {
+  0% {background-position: 0% 50%; }
+  50% {background-position: 50% 100%; }
+  100% {background-position: 0% 50%; }
 }
 
 p {
@@ -43,11 +58,11 @@ body {
 }
 
 img {
-  transition: 0.3s;
+  transition: 0.2s;
 }
 
 img:hover {
-  transform: scale(1.05);
+  transform: scale(1.08);
 }
 
 img:active {
@@ -98,4 +113,10 @@ body {
 
 .btn i {
   margin-right: 10px;
+}
+
+.about {
+  text-align: center;
+  padding: 0 20px;
+  color: #ccc;
 }
