@@ -1,5 +1,5 @@
 function checkScroll() {
- const elements = document.querySelectorAll('.hidden');
+ const elements = document.querySelectorAll('.links');
 
   elements.forEach(el => {
     const top = el.getBoundingClientRect().top;
